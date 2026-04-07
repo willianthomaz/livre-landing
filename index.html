@@ -666,12 +666,13 @@
     Juntos, vamos construir a maior ferramenta de recuperação do Brasil.
   </p>
 
-  <div class="email-form reveal">
-    <input type="email" class="email-input" placeholder="Seu melhor e-mail" id="email-input">
-    <button class="email-btn" id="submit-btn">Quero participar</button>
-  </div>
-  <p class="hero-note reveal" id="form-status">Sem spam. Só atualizações importantes sobre o lançamento.</p>
-</section>
+  <form class="email-form reveal" action="https://formspree.io/f/mzdkwzvl" method="POST">
+    <input type="email" class="email-input" placeholder="Seu melhor e-mail" name="email" required>
+    <button type="submit" class="email-btn">Quero participar</button>
+    <input type="hidden" name="_subject" value="Novo inscrito na waitlist do LIVRE!" />
+    <input type="hidden" name="_next" value="https://livre-landing.vercel.app/?inscrito=true" />
+</form>
+<p class="hero-note reveal" id="form-status">Sem spam. Só atualizações importantes sobre o lançamento.</p>
 
 <!-- FOOTER -->
 <footer>
